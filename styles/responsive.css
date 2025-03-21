@@ -1,0 +1,167 @@
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .tab {
+        flex: 1 1 calc(33.333% - 5px);
+        min-width: 80px;
+        padding: 8px 5px;
+        font-size: 14px;
+    }
+
+    .month-tabs, .year-tabs {
+        flex-wrap: wrap;
+        gap: 3px;
+        padding: 5px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .month-tabs::-webkit-scrollbar, .year-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .month-tab, .year-tab {
+        flex: 0 0 auto;
+        min-width: 70px;
+        font-size: 12px;
+        padding: 6px 8px;
+        margin: 2px;
+    }
+
+    form {
+        gap: 8px;
+    }
+
+    input, select {
+        padding: 8px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .date-input {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .date-input label {
+        font-size: 14px;
+    }
+
+    .summary {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .summary h3 {
+        font-size: 1rem;
+    }
+
+    .summary p {
+        font-size: 0.9rem;
+    }
+
+    #expense-list {
+        margin-top: 10px;
+    }
+
+    li {
+        flex-direction: column;
+        gap: 5px;
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .tab {
+        font-size: 12px;
+        padding: 6px 4px;
+    }
+
+    .month-tab, .year-tab {
+        min-width: 60px;
+        font-size: 11px;
+        padding: 5px 6px;
+    }
+
+    input, select {
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .summary {
+        padding: 8px;
+    }
+
+    .summary h3 {
+        font-size: 0.9rem;
+    }
+
+    .summary p {
+        font-size: 0.8rem;
+    }
+
+    li {
+        font-size: 13px;
+        padding: 6px;
+    }
+}
+
+@media (hover: none) {
+    .tab, .month-tab, .year-tab, button {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    input, select, button {
+        min-height: 44px;
+    }
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .container {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .month-tabs, .year-tabs {
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 1;
+        padding: 5px;
+    }
+} 

@@ -1,0 +1,241 @@
+button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.tab {
+    background: none;
+    color: #666;
+    border-bottom: 2px solid transparent;
+    padding: 12px 20px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tab.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: -2px;
+}
+
+.tab:hover {
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+}
+
+.month-tab, .year-tab {
+    background: none;
+    color: #666;
+    padding: 8px 16px;
+    margin: 2px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.month-tab.active, .year-tab.active {
+    color: #007bff;
+    background: #e9ecef;
+}
+
+.month-tab:hover, .year-tab:hover {
+    background: #007bff;
+    color: white;
+}
+
+#clear-expenses {
+    background: #dc3545;
+    color: white;
+    width: auto;
+    margin: 10px auto;
+    font-weight: 500;
+    padding: 6px 12px;
+    font-size: 14px;
+    min-height: 36px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#clear-expenses:hover {
+    background: #c82333;
+    transform: translateX(-50%) translateY(-1px);
+}
+
+form button[type="submit"] {
+    background: #007bff;
+    color: white;
+    width: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    min-height: 36px;
+    float: right;
+}
+
+form button[type="submit"]:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+.confirm-btn, .cancel-btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-weight: 500;
+    min-width: 100px;
+}
+
+.confirm-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.confirm-btn:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+}
+
+.cancel-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #5a6268;
+    transform: translateY(-1px);
+}
+
+li button {
+    background: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    min-height: 36px;
+}
+
+li button:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+        min-height: 36px;
+    }
+
+    .tab {
+        padding: 6px 8px;
+        font-size: 13px;
+        min-height: 32px;
+    }
+
+    .month-tab, .year-tab {
+        padding: 4px 8px;
+        font-size: 12px;
+        min-width: 60px;
+        min-height: 28px;
+        margin: 1px;
+    }
+
+    .confirm-btn, .cancel-btn {
+        padding: 6px 8px;
+        font-size: 13px;
+        min-height: 32px;
+    }
+
+    li button {
+        padding: 4px 8px;
+        font-size: 12px;
+        min-height: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    button {
+        padding: 6px 10px;
+        font-size: 13px;
+        min-height: 32px;
+    }
+
+    .tab {
+        padding: 5px 6px;
+        font-size: 12px;
+        min-height: 28px;
+    }
+
+    .month-tab, .year-tab {
+        padding: 3px 6px;
+        font-size: 11px;
+        min-width: 50px;
+        min-height: 26px;
+        margin: 1px;
+    }
+
+    .confirm-btn, .cancel-btn {
+        padding: 5px 6px;
+        font-size: 12px;
+        min-height: 28px;
+    }
+
+    li button {
+        padding: 3px 6px;
+        font-size: 11px;
+        min-height: 26px;
+    }
+}
+
+@media (hover: none) {
+    button {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .tab:active, .month-tab:active, .year-tab:active,
+    .confirm-btn:active, .cancel-btn:active, li button:active {
+        transform: scale(0.98);
+    }
+
+    button:active {
+        opacity: 0.8;
+    }
+
+    .tab, .month-tab, .year-tab {
+        min-height: 36px;
+    }
+
+    .confirm-btn, .cancel-btn {
+        min-height: 36px;
+    }
+
+    li button {
+        min-height: 32px;
+    }
+}
