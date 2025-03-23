@@ -73,14 +73,38 @@
                         <option value="Education">Education</option>
                         <option value="Entertainment">Entertainment</option>
                         <option value="Pets">Pets</option>
+                        <option value="Salary">Salary</option>
+                        <option value="Investment">Investment</option>
+                        <option value="Business">Business</option>
+                        <option value="Freelance">Freelance</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
-                <button type="submit">Add Expense</button>
+                <div class="form-group">
+                    <label for="transaction-type">Transaction Type:</label>
+                    <select id="transaction-type">
+                        <option value="expense">Expense (-)</option>
+                        <option value="income">Income (+)</option>
+                    </select>
+                </div>
+                <button type="submit">Add Transaction</button>
             </form>
             <div class="summary">
                 <h3>Daily Summary</h3>
-                <p>Total: <span id="daily-total">0</span> ₪</p>
+                <div class="summary-grid">
+                    <div class="summary-item income">
+                        <span class="label">Income:</span>
+                        <span id="daily-income">0</span> ₪
+                    </div>
+                    <div class="summary-item expense">
+                        <span class="label">Expenses:</span>
+                        <span id="daily-expenses">0</span> ₪
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">Balance:</span>
+                        <span id="daily-balance">0</span> ₪
+                    </div>
+                </div>
             </div>
             <ul id="daily-expense-list"></ul>
         </div>

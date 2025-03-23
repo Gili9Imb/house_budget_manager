@@ -1,0 +1,39 @@
+# General Settings
+- Enable auto-save and format-on-save for consistency.
+- Use spaces instead of tabs, with a tab size of 2.
+- Set the maximum line length to 100 characters.
+
+# TypeScript Rules
+- Enforce strict mode and prevent implicit 'any' types.
+- Enable strict null checks and function type enforcement.
+- Use consistent type imports and prefer readonly properties where applicable.
+
+# JavaScript Best Practices
+- Prefer 'const' over 'let' where possible.
+- Disallow the use of 'var'.
+- Warn against unused variables and console logs.
+
+# CSS Guidelines
+- Follow the BEM methodology for class naming.
+- Avoid inline styles and enforce the use of CSS variables.
+- Use Tailwind CSS where applicable.
+
+# HTML Standards
+- Ensure semantic tags are used correctly.
+- Require self-closing tags where possible.
+- Use double quotes for attributes.
+
+# File and Project Organization
+- Exclude unnecessary directories like 'node_modules', 'dist', and '.git'.
+- Maintain a structured folder system:
+  - `src/components` for reusable UI elements.
+  - `src/pages` for page-level components.
+  - `src/utils` for helper functions.
+  - `src/styles` for global and component styles.
+  - `public/assets` for images and other static files.
+  - `public/icons` for SVG or icon assets.
+
+# Linting and Formatting
+- Use ESLint for code quality enforcement.
+- Use Prettier for automatic formatting.
+- Ensure linting and formatting are applied before commits.
